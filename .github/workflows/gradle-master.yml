@@ -48,3 +48,5 @@ jobs:
             echo "Publishing snapshot to OJO"
             ./gradlew :spring-security-core:artifactoryPublish || EXIT_STATUS=$?
           fi
+      - name: Docs
+        run: ./gradlew docs
