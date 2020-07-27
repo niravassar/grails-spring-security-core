@@ -29,6 +29,9 @@ import org.springframework.security.web.authentication.session.SessionAuthentica
 
 import javax.servlet.http.HttpServletResponse
 
+/**
+ *
+ */
 @Secured('permitAll')
 class LoginController {
 

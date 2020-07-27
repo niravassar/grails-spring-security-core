@@ -71,3 +71,10 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+
+webdriverBinaries {
+    chromedriver {
+        version = '2.45.0'
+        architecture = 'X86'
+    }
+}
