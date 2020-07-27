@@ -31,9 +31,9 @@ jobs:
         run: ./gradlew -Dgeb.env=chromeHeadless :misc-group:check --console=plain
       - name: misc-hierarchical-roles:check
         run: ./gradlew  -Dgeb.env=chromeHeadless :misc-hierarchical-roles:check --console=plain
-     - name: functional-test-app
-       run: |
-          ./gradlew -DTESTCONFIG=annotation -Dgeb.env=chromeHeadless functional-test-app:check --console=plain
+      - name: functional-test-app
+        run: ./gradlew -DTESTCONFIG=annotation -Dgeb.env=chromeHeadless functional-test-app:check --console=plain
+
 #      - name: functional-test-app
 #        run: |
 #          ./gradlew -DTESTCONFIG=static -Dgeb.env=chromeHeadless functional-test-app:check  --console=plain
