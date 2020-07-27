@@ -49,4 +49,4 @@ jobs:
             ./gradlew :spring-security-core:artifactoryPublish || EXIT_STATUS=$?
           fi
       - name: Docs
-        run: ./gradlew docs
+        run: ./gradlew :spring-security-core:docs
