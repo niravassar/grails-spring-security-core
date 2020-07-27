@@ -23,3 +23,5 @@ jobs:
           java-version: ${{ matrix.java }}
       - name: spring-security-core:check
         run: ./gradlew -Dgeb.env=chromeHeadless :spring-security-core:check --console=plain
+      - name: spring-security-core:install
+        run: ./gradlew :spring-security-core:install --console=plain
