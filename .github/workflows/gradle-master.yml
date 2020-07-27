@@ -25,3 +25,5 @@ jobs:
         run: ./gradlew -Dgeb.env=chromeHeadless :spring-security-core:check --console=plain
       - name: spring-security-core:install
         run: ./gradlew :spring-security-core:install --console=plain
+      - name: integration-test-app:check
+        run: ./gradlew -Dgeb.env=chromeHeadless :integration-test-app:check --console=plain
