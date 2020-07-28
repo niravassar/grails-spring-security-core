@@ -183,10 +183,10 @@ if [[ -n $TRAVIS_TAG ]] || [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST
   if [[ $TRAVIS_BRANCH == 'master' ]]; then
 
     mv ../plugin/build/docs/ghpages.html index.html
-    git add index.html
+    git add index.htmlcp -r ../plugin/build/docs/. ./snapshot/
 
     mkdir -p snapshot
-    cp -r ../plugin/build/docs/. ./snapshot/
+
     git add snapshot/*
 
   fi
